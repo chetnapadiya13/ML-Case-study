@@ -1,0 +1,433 @@
+
+there is one show room for automobile company 
+
+have customers for all kind vehicle 
+
+		bike		scooty
+male		200		 15
+
+female		  8		250
+
+i am claiming buying vehicle gender matters 
+
+becasue my above data of showroom 1 is saying something like that 
+
+out of 215 male 200 like to have bike 15 like to have scooty 
+so if i calculate probability   200/215 = 0.93
+out of total male in data 93% male like bike 
+
+
+i am claiming that buying a vehicle gender is matters 
+here we can see we consider only 1 show room data 
+
+1 showroom data is just sample size it is not entier population 
+all showroom customers 
+
+so whatever claim we are doing now we need to prove the process 
+of proving our claim using statistics known as 
+inferential statistics 
+
+and here it is also known as hypothysis analysis 
+
+there are two type of hypothysis 
+
+1) H0 = null hypothysis 
+2) H1= alternate hypothysis 
+
+H0 => on base of your claim when you analyz population we get same kind of information 
+	like sample is giving claim is in your favour that is called 
+	null hypothysis 
+************************************************************************************
+H1 => Alternate whatvere you have claimed that is not correct there are some 
+	other facts we got when we analyz our population data 
+	rejecting null hypothysis 
+************************************************************************************
+
+like purchasing bike gender plays role 
+gender is a feature 
+*********************************************************************************
+so whenever we wants to work with inferential statistics 
+at that time we need to work with sampling as we know that 
+it is very consuming to analyz entier population so generally we 
+took some sample data and then we try to come on conclusion about population 
+using inferential statistics.
+
+we want to tast a water malone i will take small bite of it to just tast a 
+water malone i will no eat entier water malone because 1 bite is sufficient to 
+prove it's test 
+exactly in real world also to perform some conclusion we took sample data 
+on base of sample data we try to come on conclusion for population 
+
+sample data must be proper to select sa smaple we have many different technics 
+using that we can select our best sample 
+
+random sample :- 
+	we randomly choose data from population 
+	no fix pattern of selecting sample 
+
+systematic sample :- 
+	here we analyz each population data and then i will select sample 
+	according requirments 
+	very time consuming 
+straitifed sample : 
+	here we divide our data into diff diff category after analysis 
+	and then we will select percentage of those stratified data 
+	1000 data population 
+	4 categories 
+	out of 4 categories i select some percentage of data from each category as 
+	a sample 
+clustering :- select sample on based of some category randomly called cluster 
+	
+
+once we understood sampling now it is time to understand 
+inferetial statistics methodology 
+	1)estimating parameter : we try to generalize population on based of 
+		sample data descriptive statistics  
+	2)hypothesis  :
+		we try prove it or claim it whatvere sample is giving it is 
+		actually correct ot in correct for population 
+
+let's i have sample data for effective cancer drugs and 
+as we know in statistics we use maximum normalized data 
+so that sample data descriptive alanysis is written 
+like 
+	Mean 
+	Median 
+	Standered Deviation 
+	variance 
+
+hypothesis possible on both type of data 
+1) categorical (probability)
+2) continuous (mean,median,sd,v)
+
+hypothesis is process to educate your guess 
+
+in ml we will use hypothesis to check either impact of feature in ouput is 
+there or not as well as sometime it may possible i have 
+huge amount of data from that huge amount i want to 
+select some sample and then i want to train my model 
+and whatever training is given ml model is in genelize for population 
+or not i want check so that's why it neccesary for us to do inferetial statistics 
+in ml 
+
+1) feature selection 
+2) sampling and training model and come on performance od model on population 
+	data 
+
+here we generally claim sotheing 
+if i do some change to my independent variable 
+	that change will be reflact to my dependet variale 
+
+Rejecting null hypothesis we can use one sample z test 
+it is usefull when we have mean of polutation and sd of population 
+but it happen in rare case so one sample z test is used less to reject null 
+hypothesis 
+
+school pricipam claim that thier students IQ is 112 of 30 student sample 
+****************sample data
+n = 30
+mean = 112
+*****************population data 
+mean=100
+sd=15
+
+**************null hypothesis *****************
+H0 : mean=100 // population mean 
+
+**************Alternate hypothesis********************
+H1 : mean >= 100
+
+now take alpha level 
+it is known as significance level if it is not given we can 
+use 0.05
+probability of rejecting null hypothesis called significance level 
+that means 5% chance of rejecting null hypothesis 
+
+to estimate some data we took some sample 
+so number of sample we took tho estimate one sample value called degree of freedom 
+
+i have 5 age group 
+
+4 to 8    
+9 to 16   
+17 to 22     
+23 to 30 
+31 to 35 
+
+5-1 =4 
+so here degree of freedom is 4 
+
+
+there are 4 people and they have diet 4 diff diet plan 
+now i want to inference which diet plan is better for that 
+i will select randomly 1 diet plan and try to estimate other 3 diet plan on based
+of 1 which i have selected so that's why 
+df = N-1
+
+confidence :- confidence that means how much we are confident on our given
+analysis 
+
+confidence level :- 
+	my null hypothesis confidence is 95% there is 5% immpurity 
+	90% i am confident on test 10% chance where there is other probability is there 
+
+confidence interval :- 
+	when i give perticular range of my confidence then it known 
+	as confidence interval 
+	
+
+sample 
+type sample 
+what is inferetial statistics 
+	estimation
+	hypothesis 
+	
+H0 : 
+H1 : 
+
+we have seemn 1 sample z score testing 
+where we reject null hypothesis we took example of student's IQ test 
+*****************************************************************************
+degree of freedom 
+confidence intervel and confidence level 
+*****************************************************************************
+
+*****************************************************************************
+			inferential statistics 
+******************************************************************************
+
+what is inference ?
+sampling technics 
+
+definination of inferential statistics 
+
+	1)Estimation features 
+	2)Hypothesis analysis 
+
+in hyposis whatever we are claiming we gave to prove it on based of same sample 
+data on population data 
+
+inferential statistics developed to performe generalization outcome 
+for population on based of sample data 
+
+for that we use Pvalues 
+(known probabilty values)
+
+
+when we have group of samples we use df n-1
+
+when we have to perform hypothesis we use 
+alpha value or also known as significance value (confidence level)
+
+how much confidence we have on our claim 
+yesturdy we took one example that 
+we were claiming that gender is playing role while purchasing 
+vehicle so for that i took one show room data and tried o understand actually
+it is matters or not 
+this kind of stuff possible to do using inferential stattics 
+
+*****************************************************************************
+			Feature Selection
+*****************************************************************************
+in feature selection we have mainly 4 type 
+	
+	1) Filter Method 
+	2) Wrapper Method 
+	3) Embaded Method 
+	4) PCA (principal component Analysis)/feature extraction
+
+
+****************************************************************************
+what is the feature selection ? 
+
+As we know in machine learning we used to train our model with some data 
+while training we need to give data to algorithm to understand busienss process
+after that that ml model is useful for us so if i give wrong input while training
+then ml model will not give expected outcome to develop quality training to machine learning model 
+we required to peform feature selestion it is part of exploratory Data Analysis 
+
+feature selestion means find importent features from dataset and then train model for 
+better perfomance 
+
+feature selection in machine is manual process but in deep learning feature selection happen 
+automatically as begginer in ml we need to understand each feature method for better model developments 
+
+there are 4 type of feature selection 
+	1) Filter MEthod 
+	2) Warapper Method
+	3) Embadded Method 
+	4) PCA 
+
+***********************************************************************************
+1) Feature selection Filter Method
+***********************************************************************************
+
+Filter Means we want to filter feature on based of multiple independet feature given to us 
+there are three techincs available in Filter method 
+
+	1) pearson's Correlation 
+	2) Chi square 
+	3) ANOVA 
+
+************************************************************************************
+		Pearson's Correlation 
+************************************************************************************
+at begining of ml we learn about linear regression where we observed relationship 
+between independet variable with dependet variable 
+feature vs target at that time if i want to perfrom linear regression then it required 
+that feature must be correlation with target for that i used 
+pd.corr function for numerical correlation analysis in EDA 
+i also use heatmap to check correlation with other features and targets in data visualization 
+of EDA
+
+this is called pearson's correlation feature selection 
+
+we use those feature which have high correlation with target 
+and we dropped those independet feature which have correlation to remove multicoliniarity 
+
+this process is feature selction on based of pearson's correlation methodology 
+
+when use correlation feature selection 
+1) linear regression 
+2) when target is also continuous at that time it is required 
+
+now question is when my target is categorical then what should i have to do ? then see second 
+type of filter method 
+
+******************************************************************************************
+ 			Chi square 
+******************************************************************************************
+1) chi sqaure test is used on both type of data 
+	categorical 
+	continuous 
+
+chi square will perform some observed data and try to find eastimated data 
+using some basic operation of calculating % or we can say probability values 
+
+whatever observed value we have that we will use to calculate estimated values 
+once we get that we will use chi2 formula 
+
+chi^2 = E(o-e)^2 / E(e)
+
+but, my question how to do this so for that we are gonna take some example 
+
+let's take example where i am claiming purchasing of vehicle gender plays a role 
+so gender is feature i want find importance of feature gender while purchasing vehicle analysis 
+
+		male		female
+bike		20    (o) 	1 (o)		21 persom who buy a bike 	
+		11.97(e)	9.03(e)
+
+scooty		2 (o)		15(o)		17 person who buy a scooty 
+		9.62 (e)	7.31 (e)
+
+total		22		16		38
+		male		female
+
+now calculate male population out of 38 22 is male 
+
+p(m)=22/38 = 57.89%  57%
+p(f)=16/38 = 43.10%  43%
+
+now, calculate estimated values on based of given percentage 
+calculate the percentage of male having a bike out of 57% of 21 
+
+now put his all observed and estimated values into formula of chi square 
+
+
+chi^2 = E(o-e)^2 / E(e)
+
+chi^2 = (20-11.97)^2 + (1-9.03)^2 +(2-9.62)^2+(15-7.31)^2 / 11.97+ 9.03 + 9.62 + 7.31 = 6.48
+
+
+*********************************************************************************************
+hypothesis to perform hyposthes we need to use 2 things 
+1) degree of freedom :- to analyz each observation 
+
+	df=(r-1)*(c-1)	
+	  =(2-1)*(2-1)
+	  =1
+
+so my degree of freedom is 1 here,
+
+now i want check confidence level 95%   99%
+to check confidence on data we need use significance value 
+	
+		by default in general significance value is 0.05 = 95% 
+		my claim is 95% accurate 
+
+chi^2 = 6.48 (i have calculated)
+
+df    = 1
+alpha = 0.05   (significance then what will be the result of claim) 
+
+so to verify our claim we need to check chi2 table value on based of given two parameters 
+
+chi2 value from table when significanse is 0.05 and df 1 then it is 3.841
+
+which is smaller than 6.48 so i am whatever claiming is correct that means 
+gender is importent feature 
+
+let's take significance level 0.01 which for df 1 chi2 table value is 6.635
+so here also 6.48 is still near to 6.635 so i can alos see my hypothesis is valid for 
+gender feature 99% 
+
+
+*****************************************************************************************************
+2) ANOVA (analysis of variance)
+*****************************************************************************************************
+so we know that variance in a data will be problem in some kind of ml models 
+
+now variance can be of two type 
+	1) variance between group 
+	2) variance withing group 
+
+
+let's understand what is it ? 
+
+input
+data={'a':[{'b':101},
+	{'c':[{'d':111}]
+	}]
+	}
+output
+a
+b
+c
+d
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+

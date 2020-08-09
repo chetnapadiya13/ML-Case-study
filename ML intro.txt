@@ -1,0 +1,270 @@
+Data analysis 
+	pandas 
+	numpy
+	matplotlib 
+and we analys our data and find insights from it 
+to do this process we use data Preprocessisng becasue 
+machine learning algorithm can except data into numeric form only 
+and also if we have some null value or missing value treatments we have to do 
+along with we have convert our categorical data into numeric data 
+
+this entier process is known as exploratory Data analysis 
+which have total 12 process 
+
+
+
+
+
+
+
+
+****************Machine Learning*******************\
+process where we want that machine learn something on previous data 
+and after that on the based of experiance if machine 
+works that process is known as machine learning 
+
+like human we first learn something and then we experiment that 
+experiance with realife exaclty same thing if i want from machine 
+that is possible 
+
+as we know 1950 Alan Turing first time intriduce that machine 
+can also learn and it can mimic like human 
+
+1)Superwised machine learning 
+2)unsuperwised machine learning 
+ 
+3)semi superwise machine learning (Deep learning) 
+	reinforcement algorthim (feedback algorithm)
+
+1) Superwised Machine learning 
+	
+	1) Regression (contineuos) Descriptive statastics 
+	2) classification (for categorical data) probability 
+
+superwised machine learning means at time of training a model 
+we have input and output both things 
+
+*********house price data **************
+as a data analyst i have given data which input and output feature 
+sqft => input feature independet variable 
+price => output feature dependent variable 
+
+i want to make machine learning model which predicts house price then 
+here we required regression of superwised machine learning 
+where i will divide my data into 2 parts 
+Training : 80% i will use for training my model 
+Testing  : 20% i will use to test my model 
+
+machine learning algorithm will select training and testing data set 
+with random mechanisum 
+
+sqft	price    
+250	200000     training
+
+380     400000     testing 
+
+450     700000     training
+500     800000     training
+700     1000000    training 
+1000    1500000    training 
+1200    1300000    training 
+
+5000    4500000    testing 
+
+now i want to predict if sqft is 850 then what will be house price ? 
+above problem i can say that is regression problem where 
+we wants to predict output of given input 
+
+once training done machine learning model will take randomaly testing 
+data input and find output of it after that it will compare 
+original output and predicted output machine learning model can 
+predict approximate output and if that predicted output is near to 
+original output that means your machine learning model is good to 
+do predictions in regression probel statements 
+
+after that as user i can give some input and then it will be 
+able to give prediction on it 
+so here 
+after training and testing if i give 
+850 sqft then it will give approx predicted price for house to me 
+
+above was example of superwised machine learning regression algo 
+type of regressions 
+1)linear regression
+2)multiple regresion
+3)polynomial regression 
+
+
+******************************************************************
+	classification algo 
+******************************************************************
+used when we want output in some category 
+either email is spam or not 
+either mouse is obease or not 
+either customer continue or not 
+
+all above are known as binary clasifiers becasue we check onle 
+0 or 1 
+
+if mail is spam then 1 
+if mail is not spam  0
+
+when we want to clasify our data into 2 category then that is known as 
+binary classifiers 
+naive bayes classifiers 
+logistic regression 
+
+multiple classifiers 
+1) Decision Tree 
+2) SVM (Support vector machine)
+3) K-nearest neighbour
+ 
+here also while training model we have 
+input (independent variable)
+output (dependent variable)
+
+lbs	month
+weight	age	state
+
+training 
+3	1	obease
+2.5	2	not obease 
+
+Testing
+4	2	obease
+5	3	obease 
+
+
+weight and age is independt variable 
+on based of weight and age with state we find probability 
+if foundt age is less and weight high that means mouse is obease 
+
+
+another example multiple classifiers 
+
+age	gender 		game application 
+12	m		ludo
+15	m		ludo 
+20	f		candy crush 
+25	f		candy crush 
+20	m		pubG
+25	m		pubG
+35	m		pubG
+40	m		pubG
+13	f		uno
+14	f		uno
+
+
+32 m  pubG
+
+21 f  candy crush 
+
+13 m ludo 
+	
+	if 
+	age > 15 
+  gender      gender 
+  m	    m          F
+ ludo 	    pubG     candy crush 
+
+above example is for decision tree 
+
+categorical that time we need to classification 
+continuous we need to regression 
+
+
+
+***************************************************************************
+			Unsuperwised Algorithm
+************************************************************************
+here we will get only input no output it will create common data cluster 
+and as machine learning engineer we will label those clusters 
+
+players		run		wickets 
+v kohli		150		0
+jspreet		10		4
+dhoni		100		1
+sachin		80		1
+kuldeep		2		3
+
+
+batsman who did good run 
+	0 batsman
+	v kohli
+	dhoni
+	sachin
+	
+	1bowler 
+	jspreet
+	kuldeep
+
+k-means cluster 
+**********************************
+customer segmntion also possible using unsuperwised ml
+
+income		expences 
+
+
+ensombling methods 
+
+votting
+bagging
+stacking 
+boosting 
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

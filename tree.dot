@@ -1,0 +1,36 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="Production Cost <= 20750.0\nmse = 613469135.802\nsamples = 9\nvalue = 25055.556"] ;
+1 [label="Production Cost <= 9000.0\nmse = 116908163.265\nsamples = 7\nvalue = 13357.143"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="Production Cost <= 2750.0\nmse = 6171875.0\nsamples = 4\nvalue = 4375.0"] ;
+1 -> 2 ;
+3 [label="Production Cost <= 300.0\nmse = 1000000.0\nsamples = 2\nvalue = 2000.0"] ;
+2 -> 3 ;
+4 [label="mse = 0.0\nsamples = 1\nvalue = 1000.0"] ;
+3 -> 4 ;
+5 [label="mse = 0.0\nsamples = 1\nvalue = 3000.0"] ;
+3 -> 5 ;
+6 [label="Production Cost <= 5500.0\nmse = 62500.0\nsamples = 2\nvalue = 6750.0"] ;
+2 -> 6 ;
+7 [label="mse = 0.0\nsamples = 1\nvalue = 6500.0"] ;
+6 -> 7 ;
+8 [label="mse = 0.0\nsamples = 1\nvalue = 7000.0"] ;
+6 -> 8 ;
+9 [label="Production Cost <= 15250.0\nmse = 13555555.556\nsamples = 3\nvalue = 25333.333"] ;
+1 -> 9 ;
+10 [label="Production Cost <= 13000.0\nmse = 4000000.0\nsamples = 2\nvalue = 23000.0"] ;
+9 -> 10 ;
+11 [label="mse = 0.0\nsamples = 1\nvalue = 21000.0"] ;
+10 -> 11 ;
+12 [label="mse = 0.0\nsamples = 1\nvalue = 25000.0"] ;
+10 -> 12 ;
+13 [label="mse = 0.0\nsamples = 1\nvalue = 30000.0"] ;
+9 -> 13 ;
+14 [label="Production Cost <= 27500.0\nmse = 196000000.0\nsamples = 2\nvalue = 66000.0"] ;
+0 -> 14 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+15 [label="mse = 0.0\nsamples = 1\nvalue = 52000.0"] ;
+14 -> 15 ;
+16 [label="mse = 0.0\nsamples = 1\nvalue = 80000.0"] ;
+14 -> 16 ;
+}

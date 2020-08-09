@@ -1,0 +1,299 @@
+1) Introduction to Data Science and Machine learning 
+2) descriptive statastics 
+numpy 
+pandas 
+matplotlib & seaborn 
+
+************************************************
+1) about normal distribution 
+2) correlation 
+3) Linear Regression (ml) 
+
+
+correlation is defining relationship between two variable 
+if one variable increases the same time another variable also increses 
+called positive correlation 
+
+perfect coorelation is not possible 
+so our data can be into high or low correlation possible (in both situation)
+1)perfect positive correlation is 1 
+2)perfect negative correlation is -1 
+3)no correlation will be 0 
+and high and low can be near 0 to near positive 1 or negative -1 
+
+
+
+calculate correlation of given data correlation
+
+if my data is  correlated and data is in continuous type then i can use 
+Linear regression Machine learning algorithm to predict icecream sale 
+
+so i can if ice cream sale increases when temp increses thne sale is dependent and temp is independet variable 
+this kind of correlation help me to predict my ice cream sale business 
+
+
+i invested to do advertisment of my product 
+when i invest 2000 in a week i got business 3200
+when i invest 3000 in a week i got business 6000
+
+i can say investing money into advertisment help me to get more business 
+and now i want to calculate ROI of my business on based of investment i have done 
+on advertisement 
+
+return of investment known as rOI 
+
+social 	i
+newspaper 
+TV channel
+
+how much business you getting 
+first you have your previous data 
+so we took your previous data and then those data we will give to machine learning model
+
+if i want to do prediction on continuous data and my data is correlated then i can use machine learning 
+linear regression to predict ROI 
+
+
+so in linear regression we need a regression line 
+which is also known as best fit line 
+so if i give some input for investment whatever point will come on that line 
+will give prediction of Y or ROI of our investment 
+
+SO to make this prediction line or regression line 
+we have some formula 
+
+	which help us to make best fit line as per our data becasue 
+	all time we can have diff diff type of data 
+
+
+Temp   sales 
+X      Y
+
+there is only one independet variable but if i want to predict house price then 
+above is example of linear regression 
+
+
+sqft	facility  area	  Y 
+x1	x2	  x3	  price
+
+
+
+when we have multiple independet variable to predict price of something Y at that time we can use 
+Multiple regresion 
+
+
+when our data is nor correlated but in that situation also we wants to 
+do prediction on our continuous data then 
+we can go for polynomial regresion line 
+where our best fit line will be curvey 
+
+
+
+linear regression :- 
+when data is continuous and data is correlated 
+1) single linear regression (1 independent and 1 dependent) icecream sale
+2) multiple linear regression  (more than 1 independet 1 dependent) house price 
+
+here regression line will be straight 
+
+when data is not correlated and still we wants to perform regression on continuous values 
+we can use 
+3)polynomial regression 
+
+here regression line will be curvey 
+
+yhat=theta1x + theta0 (Data science formula 
+
+y= mx+b (maths formula)
+
+m is slop 
+b is intercept 
+x is independet variable 
+y is prediction data point for given x 
+
+
+above formula will create best fit line 
+by reducing mean square error 
+
+
+
+*****************************************
+normal distribution 
+standard score or standered normal distribution helps us to find how much our each data is deviated from original mean 
+and give standered score of deviation ofeach observation 
+
+*********************************************
+correlation 
+
+correlation is a process when one variable value we change we can see change into dependet variable also 
+this means this two variable are correlated with each other 
+
+correlation is base of linear regression 
+there are 2 type of linear regression avaiable 
+	1)single linear regression 
+	2)multiple linear regression 
+
+regression helps us to do predication it is statastics model to do prediction on correlated data 
+
+but some time if my data is continuous and not correlated then also i want to perform 
+regressio then i have to use polynomial regression which is part of regression family 
+
+
+so we can say there are 3 type of regression we can perform 
+1)single linear regression 
+2)multiple linear regression 
+3)polynomial regression 
+
+when terminology comes linear then we make 
+best fit line which is give prediction for our independet data 
+on based of previous experiance 
+
+this best fit line is developed using MEan Squre error 
+formula 
+
+to develop best fit line we have 
+formula like 
+y=mx+b 
+
+y is prediction point 
+m is slop 
+x is independet variable 
+b is interecept 
+
+we can also write same formula like 
+yhat=theta1x+theta0 
+
+yhat is prediction point line 
+theta1 is slop 
+theta0 is intercept 
+x is independet variable 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+there are 3 type regression
+when data is in correlation 
+	1)Linear regression 
+	2)multiple regression 
+when data is not correlated 
+	3) polynomial regression 
+
+**************************************************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,193 @@
+more than one machine learning algorithm to train 
+my model this process we knwons as ensamble methods 
+
+it help me to make my ml learning ability pore powerful as 
+compared to baseline or basic ml model 
+
+here it can be homogenous or hetrogenous 
+
+homegeneous means it uses multiple model of same algorithm 
+supp i want to classification then i am using 
+logistic regression with diff diff threshold and then i combined 
+resilt of all multiple model which we trained using logistics only 
+
+
+hetrogenous means it uses multiple model with diff diff algo 
+if i want to classification then i will combined my training model 
+with multiple classification algorith like DT,SVM,randome forest 
+so here we can see 3 diff kind of algorith we used to train our model
+and this kind of ensamble known as hetrogenous 
+
+
+
+ classification data naive aggrigation is example of stacking 
+ 
+ movie likes and dislike                 **********feature**********   
+
+ gender		age		status	 dtpredict   svmpredict   knn  finalpredict(hv)   finalpredict(sv) finalmeta(lr/dt/svm)
+ m		12		1        1            1           1    1
+ m		15		1        1            1           1    1
+ m              21              0        0            0           0    0
+ f              21              1        1            1           0    1
+ f              35              0        0            1           1    1
+ m              49              1        0            0           0    0
+ f              25              1 	 1            1           0    1
+
+stacking it will divide above training data into 5 parts 
+will take one part randomly for decision tree 
+
+once training and testing happen on all data set with diff diff algo
+whatever prediction we get it will be used as a feature 
+and again it will perfom hard votting or softvoting 
+and again generate combiled result file predict 
+
+in stacking no replacement so it is example of pasting 
+
+
+***************************
+Bagging Boostrap aggrigation (homogenous)
+uses diff diff sample of same data set with same ml algorithm
+
+when sampling dose replacement of data set that means we can find repeatation of many data in between sample 
+this is known as bagging 
+
+random forest is homegenous classifier 
+because it's create multiple decision tree on sample data 
+
+when my dataset is very larg i have to use pasting 
+when my dataset is small then i go with bagging 
+
+when there option to perform only decision tree based ml then use random forest instead of normal
+decision tree algorithm 
+
+bagging : data is avaiale with replacement used in both homogenous and hatrogeneous (weight will be same)
+pasting : no replacement will happen (weight will be same)
+
+boosting : where each iteration will check performance of previous iteration it is infuanced by previsou iteration while 
+           training ada boost (Weight will be diff)
+
+
+
+ensable methods 
+
+	1)stacking  (naive aggrigation)
+	2)bagging   (bootstrap aggrigation)
+	3)pasting 
+	4)boosting 
+
+weak larner 
+strong learner 
+
+if target is continuous uses 
+	average 
+	weighted average 
+if target is categorical 
+	voting 
+		soft votting 
+		hard votting 
+
+  
+	   t1         t2      t3 
+            gender    age    activity  
+             0         1     1          1         
+
+
+random forest means multiple tree 
+
+
+
+gender   target
+m	 0
+m        1
+f        0
+f        0
+m        1
+
+m = 1 
+
+age     
+12
+24
+56
+78
+34
+
+12   1
+24   1
+34   1
+
+
+activity 
+
+  
+
+
+ 
+
+
+   
+
+
+
+
+base model that means normal machine learning algorithm 
+
+ensemble model that means uses more than one base model to make our classification or prediction more accurate 
+
+as pattern of data can be vary in this situation it is better if we use ensemble 
+
+randomforest is ensemble technic so dont use while doing naive aggragation using vottingclassifier 
+
+
+****************Todo****************************
+1) every day perform some revision on ml 
+2) every day solve at least 1 case study for data analysis 
+3) accept atleast 1 challenge from hackerrank 
+4) read interview questions
+5) try to write atleast one page content on any of data science topic which relate to any of your choice business domain 
+
+if you follow above things nobody can stop you to get job in mnc company as a data analyst or ml engineer 
+
+
+classification problem at that time we will get mis classified data 
+my aim is to correct this mis classified data into classification 
+
+
+in decision tree we use gini index or entropy 
+to check immurity of our data so here impurity means misclassification only
+if gini index is > 0 that means misclassification is there 
+if gini index is 0 that means data classified properly not need to split again 
+
+inadaboost 
+
+1) it will create random sample dataset for training 
+2) assign eqal weight to each data 
+3) first iteration will be perfomed on decision tree mechanism 
+	calculate misclassification rate 
+4) increas weight for misclassified data and perform again 
+	decision tree on it 
+5) again check misclassification rate if i 0 then 
+	combined all above model togather and produce new 
+	decision tree stump and generate output 
+	but is it is still immpure then again 
+	repeatation will happen for above process 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

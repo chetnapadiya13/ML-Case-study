@@ -1,0 +1,251 @@
+ROC is used with confusion matrix to decide threashold
+which help us to classify our data in more accurate way 
+as we know in classification algorithm we have probability measurement critear 
+keeping this thing in mind we calculate 
+
+True positive Rate 
+true negative rate 
+
+along with recall and precision and then with diff diff threashold 
+we will calcute accuracy and all accuracy we will plot in one graph 
+that graph is known as ROC
+
+
+1) person have cancer or not
+	 100 
+				predicted data
+				have c         no c
+	
+	actual data    have c	70(TP)         10 (FN)
+		       no   c 	12(FP)         8  (TN)
+
+True positive Rate =  70 / 82 =0.85 =85% good to find accurate output
+
+True Negative Rate =  8/18  =0.44 accuracy of calculating TN is less 
+
+
+by default theashold value consider to be 0.5 and we can tune it according requirments 
+
+0.1 then chance of high errors in TP values 
+0.9 then chance of high error in TN values 
+
+from sklearn.metrics import roc_curve,auc
+x_test
+pred_prob=lr1.predict_proba(x_test)[:,1]
+pred_prob # create new df in that keep age and its respective probability 
+fpr,tpr,thresholds=roc_curve(y_test,pred_prob)
+roc_auc=auc(fpr,tpr)
+plt.plot(fpr,tpr,label='ROC curve Regression (AUC = %0.2f)' % roc_auc)
+plt.xlim([0.0,1])
+plt.ylim([0.0,1])
+plt.title("ROC Curve Regression class 1 ")
+plt.xlabel("specificity")
+plt.ylabel('snesitivity')
+plt.grid(True)
+plt.legend(loc="lower right")
+plt.show()
+
+
+2) email is spam or not 
+
+**************************************************************************
+			Decision Tree 
+**************************************************************************
+you want to travel to airport from your home location 
+
+  1) go by walk if it is near and you have less buggage 
+  2) go by public transportation 
+		bus
+		share cab 
+		train 
+		auto 
+  3) private car 
+
+when we want to clasify some data at that time we can go for decision tree 
+
+	1) it is wild animal 
+	2) long tail 
+	3) it looks like human 
+	4) they jump a lot 
+	5) some times we can also see in civilien society 
+	6) they love to stay on tree and eat fruits 
+	7) some region consider that animal as god feature 
+
+decision tree is also like that human brain is also developed in same way to make a decision 
+
+data 
+
+x means didnot like movie 
+0 mean like movie 
+
+male	female 	 age
+0	x	19
+0	x	15
+0	0	21
+0	0	23
+0	0	35
+0 	x	41
+
+above data is for classification problem 
+where we want to classify people who liked the movie 
+and who didinot like movie 
+
+in DT two methods used to check impurity of data 
+1)gini index 
+2)entropy 
+
+help me to check purity of my data while classifing it 
+if data is pure then it will classify if data is not pure then
+it will take again some parameters to further classify data 
+
+here we took gender and classify people on based gender 
+i found less impurity in male gender but female is 
+complex so for that we took age feature into consideration
+and agail split data on based of age and then check impurity 
+so it will keep increasing branchis like this in DT 
+*******************************************************
+gini index  = 1 -p^2 - q^2 
+
+while rolling dia what is the p(1) = 1/6
+while rolling a die what us the q(1) =5/6
+
+x means didnot like movie 
+0 mean like movie 
+
+male	female 	 age
+0	x	19
+0	x	15
+0	0	21
+0	0	23
+0	0	35
+0 	x	41
+
+male like movie = 6/6 =1 
+male dose not like moview = 0/6 =0
+
+gini index male = 1- 1^2 - 0^2 = 0 means data is pure 
+
+female like movie = 3/6 =0.5
+female dosenot like movie = 3/6 =0.5 
+
+gini index female = 1 - (0.5)^2 - (0.5)^2=0.5 (in female case impurity is 50%)
+
+
+now calculate weighted sum of it 
+          6/6 * 0 + 3/6 * 0.5 =0+0.5+0.5 =0.25 
+
+
+now this 0.25 is impurity of gender 
+
+
+*************************************************
+above 20 and below 20 
+
+p(liking movie > 20)=7/8
+q(not liking   > 20)=1/8
+
+gini index= 1- (7/8)^2 - (1/8)^2= 1-(0.875)^2-(0.125)^2=0.225
+
+p(likeing < 20)=2/4 =0.5
+q(not liking <20)=2/4 =0.5
+
+gini index =1- (0.5)^2 -(0.5)^=0.25 
+
+now, claculate weighted sum 
+
+2/4 * 0.25/1 + 7/8 * 0.25/1 =0.5/4 + 1.575/8=0.125+0.196=0.321
+
+compare impurity of gender and age 
+
+gender = 0.25
+age =0.321
+
+i can come on conclusion that us we need to select first feature to split our data that is gender then 
+we can split our data with age 
+
+decision tree always consider each and every observation 
+and that's why it is always overfit 
+to get rid of overfit situation we generally decide how many 
+samples we wants to use to have decision 
+decision tree is still subject for further research beacuse here we dosenot have solution of overfiting situation 
+
+**************************************************************
+entropy = -plog2p-qlog2q
+
+using above formula it will split feature in DT 
+process same like gini index 
+
+let tell you we are not gonna calculate this all manually 
+this all process will happen automatically 
+
+decision tree classifier and regressior always overfit and 
+given best result during training worst result during 
+testing 
+
+supp : what is gain function then tell them 
+       gini index and entropy known as gain function 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
